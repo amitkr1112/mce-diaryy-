@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --paper-bg: #FAF9F6;
+    --paper-text: #2D2D2D;
+    --paper-muted: #4A4A4A;
+    --paper-subtle: #888888;
+    --paper-border: rgba(0, 0, 0, 0.06);
+  }
+}
+
+/* Custom Typography Helpers */
+.font-serif-heading {
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+}
+
+.font-serif-display {
+  font-family: Georgia, 'Cormorant Garamond', serif;
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+.font-handwriting {
+  font-family: 'Caveat', cursive;
+}
+
+.font-sans-clean {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Dot Grid Background for Geometric Balance */
+.geometric-dot-grid {
+  background-color: #1a1a1a;
+  background-image: radial-gradient(circle, #2a2a2a 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Realistic Geometric Paper Texture */
+.paper-texture {
+  background-color: #FAF9F6;
+  background-image: radial-gradient(circle at 50% 50%, #FAF9F6 0%, #F5F3EC 100%);
+}
+
+.paper-plain {
+  background-color: #FAF9F6;
+}
+
+/* Center Spine Crease Gradient */
+.diary-spine-crease {
+  box-shadow: 
+    inset 20px 0 25px -15px rgba(0, 0, 0, 0.08),
+    inset -10px 0 20px -10px rgba(0, 0, 0, 0.04);
+}
+
+.diary-cover-texture {
+  background: linear-gradient(135deg, #242426 0%, #1a1a1c 50%, #121214 100%);
+  box-shadow: 
+    0 35px 60px -15px rgba(0, 0, 0, 0.7),
+    0 0 0 1px rgba(255, 255, 255, 0.08),
+    inset 0 1px 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+/* Polaroid & Scrapbook Accents for Geometric Balance */
+.polaroid-card {
+  background: #ffffff;
+  box-shadow: 0 4px 16px -2px rgba(0, 0, 0, 0.08), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.polaroid-card:hover {
+  transform: translateY(-3px) scale(1.01) !important;
+  box-shadow: 0 12px 24px -4px rgba(0, 0, 0, 0.14), 0 4px 8px -2px rgba(0, 0, 0, 0.06);
+}
+
+.washi-tape {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/* Custom Scrollbar inside diary */
+.diary-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+.diary-scrollbar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.02);
+  border-radius: 2px;
+}
+.diary-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+}
+.diary-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.28);
+}

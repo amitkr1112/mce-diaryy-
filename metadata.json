@@ -1,0 +1,6 @@
+{
+  "name": "MCE.Diaryy",
+  "description": "An interactive digital diary preserving the campus life, photographs, stories, timeline, and memories of Motihari College of Engineering (MCE), Motihari.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
